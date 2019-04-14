@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="7860" started-at="2019-04-13T06:55:34Z" finished-at="2019-04-13T06:55:42Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="7860" started-at="2019-04-13T06:55:34Z" finished-at="2019-04-13T06:55:42Z">
+      <class name="testRunners.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.TestRunner@4cf777e8]" name="setUpClass" is-config="true" duration-ms="89" started-at="2019-04-13T06:55:34Z" finished-at="2019-04-13T06:55:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunner@4cf777e8]" name="feature" duration-ms="5038" started-at="2019-04-13T06:55:34Z" data-provider="features" finished-at="2019-04-13T06:55:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating Create Customer API with Valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Create Customer API"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunner@4cf777e8]" name="feature" duration-ms="2196" started-at="2019-04-13T06:55:40Z" data-provider="features" finished-at="2019-04-13T06:55:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating Create Customer API with InValid auth token"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate Create Customer API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [401]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [401]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at stepDefinations.CreateCustomerAPISteps.i_should_get_as_the_response_status_code(CreateCustomerAPISteps.java:142)
+at ✽.I should get 200 as the response status code(./src/test/resources/featureFiles/ValidateCreateCustomerAPI.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.TestRunner@4cf777e8]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2019-04-13T06:55:42Z" finished-at="2019-04-13T06:55:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunners.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
